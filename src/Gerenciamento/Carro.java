@@ -1,28 +1,28 @@
 package Gerenciamento;
 
 public class Carro extends Veiculos{
-    private String combustivel;
-    private Double quilometragem;
+    private Double combustivel;
+    private String quilometragem;
 
-    public Carro(String marca, String modelo, int ano, Double preço, Double quilometragem, String combustivel) {
+    public Carro(String marca, String modelo, int ano, Double preço, String quilometragem, Double combustivel) {
         super(marca, modelo, ano, preço);
         this.quilometragem = quilometragem;
         this.combustivel = combustivel;
     }
 
-    public String getCombustivel() {
+    public Double getCombustivel() {
         return combustivel;
     }
 
-    public void setCombustivel(String combustivel) {
+    public void setCombustivel(Double combustivel) {
         this.combustivel = combustivel;
     }
 
-    public Double getQuilometragem() {
+    public String getQuilometragem() {
         return quilometragem;
     }
 
-    public void setQuilometragem(Double quilometragem) {
+    public void setQuilometragem(String quilometragem) {
         this.quilometragem = quilometragem;
     }
 
